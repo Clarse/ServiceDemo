@@ -6,7 +6,7 @@ import android.os.Binder
 import android.os.IBinder
 import android.util.Log
 import android.widget.Toast
-import com.example.servicedemo.interfaces.ICommunication
+import com.example.servicedemo.actions.interfaces.ICommunication
 
 class FirstService : Service() {
     private val TAG = FirstService::class.java.name

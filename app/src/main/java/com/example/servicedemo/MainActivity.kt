@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
 import android.view.View
-import com.example.servicedemo.interfaces.ICommunication
+import com.example.servicedemo.actions.interfaces.ICommunication
 import com.example.servicedemo.services.FirstService
 
 class MainActivity : AppCompatActivity() {
