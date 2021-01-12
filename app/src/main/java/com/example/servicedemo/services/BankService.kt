@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.IBinder
 import com.example.servicedemo.actions.impls.BankBossActionImpl
 import com.example.servicedemo.actions.impls.BankWorkerActionImpl
+import com.example.servicedemo.actions.impls.NormalUserAIDLActionImpl
 import com.example.servicedemo.actions.impls.NormalUserActionImpl
 
 class BankService : Service() {
@@ -13,7 +14,7 @@ class BankService : Service() {
         val action = intent?.action
         return when {
             action.equals("com.example.servicedemo.ACTION_NORMAL_USER") -> {
-                NormalUserActionImpl()
+                NormalUserAIDLActionImpl()
             }
             action.equals("com.example.servicedemo.ACTION_BANK_WORKER") -> {
                 BankWorkerActionImpl()
